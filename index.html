@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan FlexBox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="container1">
+    <nav>
+      <div class="logo">
+        <img src="../assets/Logo.webp" alt="logo" />
+      </div>
+      <ul>
+        <li><a class="home" href="#">Home</a></li>
+        <li><a class="gallery" href="#">Join us</a></li>
+        <li><a class="contact" href="#">Contact</a></li>
+        <li><a class="about" href="#">About</a></li>
+      </ul>
+
+      <div class="burger-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <header>
+      <h1 class="header">DOTA 2</h1>
+      <p class="header">This is an app about the best game in the world!</p>
+    </header>
+    <aside>
+      <section id="form-section">
+        <fieldset class="field">
+          <legend>Join our Dota2 Community!</legend>
+          <form action="#">
+            <fieldset class="join">
+              <legend>Personal Data:</legend>
+              <div class="name">
+                <label for="fullname">Full Name:</label>
+                <input id="fullname" type="text" required="" />
+              </div>
+              <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required="" />
+              </div>
+              <div class="playdota">
+                <p class="have">Have you ever play dota 2?</p>
+                <label for="yes">Yes</label>
+                <input id="yes" name="everPlay" type="radio" value="Yes" />
+                <label for="no">No</label>
+                <input type="radio" name="everPlay" id="no" value="No" />
+              </div>
+            </fieldset>
+            <fieldset class="addinform">
+              <legend>Additional information:</legend>
+              <div class="rank">
+                <p>What your current rank?</p>
+                <label for="rank-select">Choose your rank:</label>
+                <select name="rankSelect" id="rank-select">
+                  <option value="">--Choose an option--</option>
+                  <option value="herald">Herald</option>
+                  <option value="guardian">Guardian</option>
+                  <option value="crusader">Crusader</option>
+                  <option value="archon">Archon</option>
+                  <option value="legend">Legend</option>
+                  <option value="ancient">Ancient</option>
+                  <option value="divine">Divine</option>
+                  <option value="immortal">Immortar</option>
+                </select>
+              </div>
+              <div class="wdyt">
+                <p>What do you think about Dota 2?</p>
+                <label for="pleasent">Pleasent</label>
+                <input
+                  id="pleasent"
+                  type="checkbox"
+                  name="Personal"
+                  value="pleasent"
+                />
+                <label for="boring">Boring</label>
+                <input
+                  id="boring"
+                  type="checkbox"
+                  name="Personal"
+                  value="boring"
+                />
+                <label for="stressful">Stressful</label>
+                <input
+                  id="stressful"
+                  type="checkbox"
+                  name="Personal"
+                  value="stressful"
+                />
+              </div>
+              <div class="tellus">
+                <p>Tell us how did you know Dota 2?</p>
+                <textarea name="" id="textarea" cols="30" rows="5"></textarea>
+              </div>
+              <div class="upload">
+                <p>Upload your favorite Dota 2 hero picture!</p>
+                <input
+                  id="photo"
+                  type="file"
+                  name="dota2HeroPhoto"
+                  required=""
+                  accept="image/png, image/jpg"
+                />
+              </div>
+            </fieldset>
+            <div class="submit">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+          </form>
+        </fieldset>
+      </section>
+      <section id="video">
+        <h4>Best war on the Dota 2 history</h4>
+        <div class="flex-container">
+          <iframe
+            width="300"
+            height="200"
+            src="https://www.youtube.com/embed/3ElXGllTpp0"
+            title="YouTube video player"
+            frameborder="3"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </aside>
+    <main>
+      <section id="dota2">
+        <h3 class="heroes">Most Picked Heroes of All Time</h3>
+        <div class="gridContainer">
+          <img
+            class="sf"
+            src="../assets/sf.png"
+            alt="a picture of one of the dota 2 characters named earthshaker"
+          />
+          <img
+            class="es"
+            src="../assets/invoker.png"
+            alt="a picture of one of the dota 2 characters named Antimage"
+          />
+          <img
+            class="spec"
+            src="../assets/ck.png"
+            alt="a picture of one of the dota 2 characters named Invoker"
+          />
+        </div>
+      </section>
+
+      <section id="championships">
+        <h3>Dota 2 Championships</h3>
+        <div class="flex-container">
+          <ul>
+            <li>Dota Pro Circuit (DPC)</li>
+            <li>Dota 2 Minor Tournament</li>
+            <li>Dota 2 Major Tournament</li>
+            <li>The International</li>
+          </ul>
+          <figure>
+            <img
+              class="EG"
+              src="../assets/TI5.jpg"
+              alt="winner dota 2 championships lifting thropies"
+            />
+            <figcaption>
+              One of the dota 2 teams lifted the The International
+              <em>Aegis</em>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
