@@ -82,6 +82,7 @@ aside {
 
 #email {
     background-image: url(../assets/gradient.webp);
+    background-blend-mode: darken;
     border-color: rgb(208, 197, 185);
     color: rgb(208, 197, 185);
 }
