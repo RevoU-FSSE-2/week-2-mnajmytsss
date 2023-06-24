@@ -13,6 +13,7 @@ Notable feature
     Horizontal scrolling image on mobile view.
     Vertical scrolling image on desktop view.
     I used css grid to adjust possition on navbar, header, aside and main element
+    I moved the join form to another page on mobile screen, and you can acces the join form to click the burger button and hit the join us
 
 Additional information
 
